@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SnapDisney</string>
+    <string name="mickey_button">Mickey Mouse</string>
+    <string name="minnie_button">Minnie Mouse</string>
+    <string name="donald_button">Donald Duck</string>
+    <string name="title">SnapDisney</string>
+    <string name="instruct">Select a filter!</string>
+</resources>

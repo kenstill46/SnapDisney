@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp" />
+
+    <TextView
+        android:id="@+id/instruct"
+        android:text="@string/instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mickey_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mickey_button"/>
+
+        <Button
+            android:id="@+id/minnie_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minnie_button"/>
+
+        <Button
+            android:id="@+id/donald_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donald_button"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
