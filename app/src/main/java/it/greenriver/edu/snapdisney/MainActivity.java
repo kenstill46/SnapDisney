@@ -1,16 +1,13 @@
 package it.greenriver.edu.snapdisney;
 
 import android.content.Context;
-import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeActivity(String charFilter){
-        //add a "playsound" function based on charFilter, gets sound from resources
+
 
         //send intent to CameraActivity with selected character filter
 

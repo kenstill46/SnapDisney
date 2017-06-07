@@ -5,4 +5,5 @@
     <string name="donald_button">Donald Duck</string>
     <string name="title">SnapDisney</string>
     <string name="instruct">Select a filter!</string>
+    <string name="take_picture">Take picture</string>
 </resources>
