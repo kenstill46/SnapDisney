@@ -1,17 +1,23 @@
 package it.greenriver.edu.snapdisney;
 
 import android.content.Context;
+import android.content.res.AssetFileDescriptor;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mMickeyButton;
     private Button mMinnieButton;
     private Button mDonaldButton;
+    private MediaPlayer mMediaPlayer;
 
     //Create 3 buttons (Mickey, Minnie, Donald)
     //onclick send explicit intent with drawable ears to in-app camera
@@ -21,13 +27,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //change to appropriate files once acquired
+        final MediaPlayer mickeyPlayer = MediaPlayer.create(this, R.raw.mickey);
+        final MediaPlayer minniePlayer = MediaPlayer.create(this, R.raw.mickey);
+        final MediaPlayer donaldPlayer = MediaPlayer.create(this, R.raw.mickey);
 
         mMickeyButton = (Button)findViewById(R.id.mickey_button);
         mMickeyButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
                 changeActivity("mickey");
+                mickeyPlayer.start();
             }
 
         });
@@ -37,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 changeActivity("minnie");
+                minniePlayer.start();
             }
 
         });
@@ -47,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 changeActivity("donald");
+                donaldPlayer.start();
             }
 
         });
