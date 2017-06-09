@@ -32,10 +32,10 @@
             android:text="@string/mickey_button"/>
 
         <Button
-            android:id="@+id/minnie_button"
+            android:id="@+id/goofy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/minnie_button"/>
+            android:text="@string/goofy_button"/>
 
         <Button
             android:id="@+id/donald_button"

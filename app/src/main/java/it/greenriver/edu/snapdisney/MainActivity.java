@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button mMickeyButton;
-    private Button mMinnieButton;
+    private Button mGoofyButton;
     private Button mDonaldButton;
     private MediaPlayer mMediaPlayer;
 
@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //change to appropriate files once acquired
-        final MediaPlayer mickeyPlayer = MediaPlayer.create(this, R.raw.mickey);
-        final MediaPlayer minniePlayer = MediaPlayer.create(this, R.raw.mickey);
-        final MediaPlayer donaldPlayer = MediaPlayer.create(this, R.raw.mickey);
+        final MediaPlayer mickeyPlayer = MediaPlayer.create(this, R.raw.hotdog);
+        final MediaPlayer goofyPlayer = MediaPlayer.create(this, R.raw.goofy);
+        //change donald to a donald sound once acquired
+        final MediaPlayer donaldPlayer = MediaPlayer.create(this, R.raw.goofy);
 
         mMickeyButton = (Button)findViewById(R.id.mickey_button);
         mMickeyButton.setOnClickListener(new View.OnClickListener() {
@@ -42,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        mMinnieButton = (Button)findViewById(R.id.minnie_button);
-        mMinnieButton.setOnClickListener(new View.OnClickListener() {
+        mGoofyButton = (Button)findViewById(R.id.goofy_button);
+        mGoofyButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
-                changeActivity("minnie");
-                minniePlayer.start();
+                changeActivity("goofy");
+                goofyPlayer.start();
             }
 
         });
