@@ -1,6 +1,7 @@
 package it.greenriver.edu.snapdisney;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void changeActivity(String charFilter){
 
+        Intent cameraIntent = new Intent(this, CameraActivity.class);
+        startActivity(cameraIntent);
 
         //send intent to CameraActivity with selected character filter
 
