@@ -3,22 +3,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
+              android:gravity="top|center"
+              android:background="@drawable/background2"
               android:orientation="vertical">
 
     <TextView
         android:id="@+id/title"
-        android:text="@string/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="30dp" />
+        android:paddingBottom="140dp"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#e01616"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:fontFamily="cursive"
+        android:textSize="80sp"/>
 
     <TextView
         android:id="@+id/instruct"
         android:text="@string/instruct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="30dp" />
+        android:padding="20dp"
+        android:textColor="#e01616"
+        android:textSize="30sp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
