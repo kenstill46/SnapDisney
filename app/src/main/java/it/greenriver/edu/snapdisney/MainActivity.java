@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeActivity("mickey");
+                changeActivity("Mickey");
                 mickeyPlayer.start();
             }
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeActivity("goofy");
+                changeActivity("Goofy");
                 goofyPlayer.start();
             }
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                changeActivity("donald");
+                changeActivity("Donald");
                 donaldPlayer.start();
             }
 
