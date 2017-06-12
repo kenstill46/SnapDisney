@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="top|center"
+              android:background="@drawable/background2"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="80dp"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#e01616"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:fontFamily="cursive"
+        android:textSize="80sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/instruct"
+        android:text="@string/instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:textColor="#e01616"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="180dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/mickey_button"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mickey"/>
+
+        <Button
+            android:id="@+id/goofy_button"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/goofy"/>
+
+        <Button
+            android:id="@+id/donald_button"
+            android:layout_width="100dp"
+            android:layout_height="102dp"
+            android:layout_gravity="right"
+            android:background="@drawable/donald"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
