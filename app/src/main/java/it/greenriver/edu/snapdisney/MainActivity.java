@@ -23,12 +23,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //change to appropriate files once acquired
+        
         final MediaPlayer mickeyPlayer = MediaPlayer.create(this, R.raw.hotdog);
         final MediaPlayer goofyPlayer = MediaPlayer.create(this, R.raw.goofy);
-        //change donald to a donald sound once acquired
-        final MediaPlayer donaldPlayer = MediaPlayer.create(this, R.raw.goofy);
+        final MediaPlayer donaldPlayer = MediaPlayer.create(this, R.raw.donald);
 
         mMickeyButton = (Button)findViewById(R.id.mickey_button);
         mMickeyButton.setOnClickListener(new View.OnClickListener() {
