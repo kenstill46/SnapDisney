@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private Button mMickeyButton;
     private Button mGoofyButton;
     private Button mDonaldButton;
-    private MediaPlayer mMediaPlayer;
 
     //Create 3 buttons (Mickey, Minnie, Donald)
     //onclick send explicit intent with drawable ears to in-app camera
